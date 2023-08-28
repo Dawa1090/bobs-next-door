@@ -1,9 +1,9 @@
 import React from "react"
 
-function NewStoreForm() {
+function NewStoreForm({onAddStore}) {
 
     return(
-        <form>
+        <form onSubmit = {onAddStore}>
             <input type="text" id="name" placeholder="Store Name"/>
             <input type="text" id="image" placeholder="Image URL" />
             <input type="number" id="season" placeholder="Season" step="1"/>
